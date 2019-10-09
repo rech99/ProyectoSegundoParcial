@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.ParametrosScarlett"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="grdSCARLETT">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,82,0,0"><Run Text="Version"/><Run Text=":"/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,121,0,0"><Run Text="C"/><Run Text="olor"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,159,0,0"><Run Text="Procesador"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="7,194,0,0"><Run Text="Fecha"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,83,0,0"><Run Text="Pinturas"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,118,0,0" Text="Edicion:"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,158,0,0"><Run Text="Materiales"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,193,0,0" Text="Almacenamiento:"/>
+        <RadioButton x:Name="RB1" Content="1TB" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="311,192,0,0"  />
+        <RadioButton x:Name="RB2" Content="2TB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="371,192,0,0" Height="16" Width="62"  />
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="56,84,0,0" />
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="56,123,0,0"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Margin="90,158,0,0"/>
+        <TextBox x:Name="tb4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Margin="45,191,0,0"/>
+        <TextBox x:Name="tb5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="262,83,0,0"/>
+        <TextBox x:Name="tb6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="287,151,0,0"/>
+        <CheckBox x:Name="CB1" Content="Standard" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="262,121,0,0"/>
+        <CheckBox x:Name="CB2" IsChecked="True" Content="Coleccionista" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="343,122,0,0"/>
+        <TextBlock x:Name="ERROR" Visibility="Hidden" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="311,240,0,0" Height="28" Width="448" FontSize="16" FontFamily="MV Boli" FontWeight="Bold" Foreground="#FFF72525"><Run Text="&quot;Es necesario que se llenen todos los "/><Run Text="datos"/><Run Text=" "/><Run Text="obligatorios.&quot;"/></TextBlock>
+        <Button x:Name="btng" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="27,248,0,0" Click="Btng_Click" />
+        <Button x:Name="btnc" Content="Cerrar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="167,248,0,0" Click="Btnc_Click" />
+    </Grid>
+</UserControl>
